@@ -1,0 +1,11 @@
+{
+            "Comment": "CREATE/DELETE/UPSERT a record ",
+            "Changes": [{
+            "Action": "CREATE",
+                        "ResourceRecordSet": {
+                                    "Name": "{{ record_name }}",
+                                    "Type": "{{ record_type }}",
+                                    "TTL": {{ ttl_time }},
+                                    "ResourceRecords": [{ "Value": "{{ record_values }}"}]
+                                    }}]
+}
