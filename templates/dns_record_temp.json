@@ -1,7 +1,7 @@
 {
             "Comment": "CREATE/DELETE/UPSERT a record ",
             "Changes": [{
-            "Action": "CREATE",
+            "Action": "{{ record_action }}",
                         "ResourceRecordSet": {
                                     "Name": "{{ record_name }}",
                                     "Type": "{{ record_type }}",
