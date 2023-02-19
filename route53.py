@@ -7,9 +7,9 @@ template = environment.get_template("dns_record_temp.json")
 zone_id=sys.argv[1]
 record_name=sys.argv[2]
 record_type=sys.argv[3]
-ttl_time=sys.argv[4]
-record_values=sys.argv[5]
-record_action=sys.argv[6]
+record_action=sys.argv[4]
+ttl_time=sys.argv[5]
+record_values=sys.argv[6]
 
 content = template.render(
         record_action=record_action,
