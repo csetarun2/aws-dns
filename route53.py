@@ -18,7 +18,7 @@ content = template.render(
         ttl_time=ttl_time,
         record_values=record_values
     )
-print(content)
+print("Generated recordset content=",content)
 filename="recordset.json"
 with open(filename, mode="w", encoding="utf-8") as message:
     message.write(content)
