@@ -1,0 +1,17 @@
+{
+    "Comment": "Creating Alias resource record sets in Route 53",
+    "Changes": [
+      {
+        "Action": "{{ record_action }}",
+        "ResourceRecordSet": {
+          "Name": "{{ record_name }}",
+          "Type": "{{ record_type }}",
+          "AliasTarget": {
+            "HostedZoneId": "{{ hosted_zone_id }}",
+            "DNSName": "{{ record_values }}",
+            "EvaluateTargetHealth": {{ healthtarget }}
+          }
+        }
+      }
+    ]
+  }
